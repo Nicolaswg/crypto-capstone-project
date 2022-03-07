@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-primary: #4369b2;
+  --color-white: #fff;
+  --color-gray: #dfdfdf;
+  --color-ligth-gray: #e6e4e49b;
+  --placeholder-color: #818080;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
   flex-direction: column;
+}
+
+.header {
+  max-width: 100%;
+  padding: 40px 0;
+  background-color: var(--color-ligth-gray);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-a {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-a h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+.flex-a input {
+  margin: 10px;
+  min-width: 80%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  padding: 10px 5px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  transition: border-color 600ms ease;
+}
+
+.flex-a input:focus {
+  border-color: var(--color-primary);
+}
+
+.flex-a input::placeholder {
+  color: var(--placeholder-color);
+  letter-spacing: 1.2px;
 }
