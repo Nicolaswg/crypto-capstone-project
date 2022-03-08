@@ -1,8 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-// import { NavLink } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
-
 import CoinItem from './CoinItem';
 
 const CoinList = () => {
@@ -10,7 +8,7 @@ const CoinList = () => {
   console.log(coinsData);
 
   return (
-    <div className="coins-container">
+    <ul className="coins-container flex">
       {coinsData.map((coin) => (
         <CoinItem
           id={coin.id}
@@ -20,7 +18,7 @@ const CoinList = () => {
           key={uuid()}
         />
       ))}
-    </div>
+    </ul>
   );
 };
 

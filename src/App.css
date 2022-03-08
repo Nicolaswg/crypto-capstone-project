@@ -9,6 +9,7 @@
 
 :root {
   --color-primary: #4369b2;
+  --color-primary-ligth: rgba(67, 105, 178, 0.6);
   --color-white: #fff;
   --color-gray: #dfdfdf;
   --color-ligth-gray: #e6e4e49b;
@@ -30,7 +31,7 @@
 .header {
   max-width: 100%;
   padding: 40px 0;
-  background-color: var(--color-ligth-gray);
+  background: var(--color-primary-ligth);  /* fallback for old browsers */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -48,6 +49,7 @@
   font-weight: 300;
   letter-spacing: 2px;
   margin: 10px;
+  color: var(--color-gray);
 }
 
 .flex-a input {
@@ -75,3 +77,64 @@
 }
 
 /* !!CoinList styles */
+.coins-container {
+  background: #0f2027;  /* fallback for old browsers */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 2.5px;
+}
+
+.coin-card {
+  background-color: var(--color-primary-ligth);
+  width: 160px;
+  height: 160px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+  list-style: none;
+  -webkit-box-shadow: 2.1px 1px 4px 1.5px var(--placeholder-color);
+  -moz-box-shadow: 2px 1px 4px 1.5px var(--placeholder-color);
+  box-shadow: 2px 1px 4px 1.5px var(--placeholder-color);
+  transition: transform 400ms ease;
+}
+
+.coin-card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.card img {
+  width: 45%;
+}
+
+.coin-info {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.coin-name {
+  text-align: center;
+  margin: 3px;
+}
+
+.coin-value {
+  text-align: center;
+  margin: 3px;
+}
+
+/* !!CoinDetails styles */

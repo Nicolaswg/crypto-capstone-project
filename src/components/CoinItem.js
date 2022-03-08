@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 
 const CoinItem = (props) => {
@@ -10,12 +11,18 @@ const CoinItem = (props) => {
   } = props;
 
   return (
-    <ul>
-      <li>{id}</li>
-      <li>{name}</li>
-      <li><img src={image} alt="img" /></li>
-      <li>{value}</li>
-    </ul>
+    <li className="coin-card flex">
+      <Link
+        to={`/coindetails/${id}`}
+        className="card flex"
+      >
+        <img src={image} alt="coin-img" />
+        <div className="coin-info flex">
+          <p className="coin-name">{name}</p>
+          <p className="coin-value">{`${value} $`}</p>
+        </div>
+      </Link>
+    </li>
   );
 };
 
@@ -23,7 +30,7 @@ CoinItem.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
 };
 
 export default CoinItem;
