@@ -15,6 +15,7 @@
   --placeholder-color: #818080;
 }
 
+/* !!Main classes */
 .flex {
   display: flex;
 }
@@ -25,6 +26,7 @@
   flex-direction: column;
 }
 
+/* !!Header styles */
 .header {
   max-width: 100%;
   padding: 40px 0;
@@ -71,3 +73,5 @@
   color: var(--placeholder-color);
   letter-spacing: 1.2px;
 }
+
+/* !!CoinList styles */
