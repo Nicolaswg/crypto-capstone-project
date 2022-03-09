@@ -5,7 +5,6 @@ import CoinItem from './CoinItem';
 
 const CoinList = () => {
   const coinsData = useSelector((state) => state.coinsReducer);
-  console.log(coinsData);
 
   return (
     <ul className="coins-container flex">
