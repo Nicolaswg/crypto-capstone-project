@@ -1,14 +1,14 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import { v4 as uuid } from 'uuid';
 import CoinItem from './CoinItem';
 
-const CoinList = () => {
-  const coinsData = useSelector((state) => state.coinsReducer);
-
+const CoinList = ({ coinsData, search }) => {
+  const filteredCoins = coinsData.filter((coin) => coin.name.toLowerCase()
+    .includes(search.toLowerCase()));
   return (
     <ul className="coins-container flex">
-      {coinsData.map((coin) => (
+      {filteredCoins.map((coin) => (
         <CoinItem
           id={coin.id}
           name={coin.name}
@@ -21,4 +21,8 @@ const CoinList = () => {
   );
 };
 
+CoinList.propTypes = {
+  coinsData: PropTypes.instanceOf(Array).isRequired,
+  search: PropTypes.string.isRequired,
+};
 export default CoinList;

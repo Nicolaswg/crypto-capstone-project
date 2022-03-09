@@ -1,15 +1,12 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-
-import { v4 as uuid } from 'uuid';
-import CoinItem from './CoinItem';
+import CoinSearch from './CoinSearch';
 
 const CoinDetails = () => {
   const { id } = useParams();
   const coinsData = useSelector((state) => state.coinsReducer);
   const currentCoin = coinsData.filter((state) => state.id === id);
-  const filterCoins = coinsData.filter((state) => state.id !== id);
   return (
     <>
       <div className="detail-container flex">
@@ -64,17 +61,7 @@ const CoinDetails = () => {
           </div>
         </div>
       </div>
-      <ul className="coins-container flex">
-        {filterCoins.map((coin) => (
-          <CoinItem
-            id={coin.id}
-            name={coin.name}
-            image={coin.image}
-            value={coin.current_price}
-            key={uuid()}
-          />
-        ))}
-      </ul>
+      <CoinSearch />
     </>
   );
 };
