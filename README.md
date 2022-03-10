@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-> Completed React & Redux project, releated to a single page app (SPA), were you can find information of the most populars crypto coins in the market using [coingecko](https://www.coingecko.com/es) API
+> Completed React & Redux project, releated to a single page app (SPA), were you can find information of the most popular crypto coins in the market using [coingecko](https://www.coingecko.com/es) API. Including a search bar for filtering the crypto coin you want to match.
 
 ## Built with
 
@@ -16,10 +16,9 @@
 - React Testing Library
 
 ## Live Demo
-[Heroku live page](https://reacrt-storebook.herokuapp.com/)
+[Netlify](https://nostalgic-boyd-fed032.netlify.app/)
 
-
-https://user-images.githubusercontent.com/73354132/155653830-d237ef5b-84cc-4e4b-b086-080232c15b9e.mp4
+![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/73354132/157728214-2aa42b4d-123e-48af-b881-90725e11f8f0.gif)
 
 
 ## Set up project
