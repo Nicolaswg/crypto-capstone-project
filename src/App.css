@@ -149,8 +149,9 @@ body {
 /* !!CoinDetails styles */
 .detail-container {
   width: 100%;
-  height: 65%;
+  height: 100%;
   justify-content: center;
+  align-items: center;
   background: #0f2027;  /* fallback for old browsers */
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

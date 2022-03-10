@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import CoinSearch from './CoinSearch';
+// import CoinSearch from './CoinSearch';
 
 const CoinDetails = () => {
   const { id } = useParams();
@@ -61,7 +61,6 @@ const CoinDetails = () => {
           </div>
         </div>
       </div>
-      <CoinSearch />
     </>
   );
 };
