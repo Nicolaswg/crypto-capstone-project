@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+
+import CoinSearch from './components/CoinSearch';
+import CoinDetails from './components/CoinDetails';
+import store from './Redux/ConfigStore';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <Provider store={store}>
+    <div className="main-content flex">
+      <Router>
+        <Routes>
+          <Route path="/" element={<CoinSearch />} />
+          <Route path="/coindetails/:id" element={<CoinDetails />} />
+        </Routes>
+      </Router>
     </div>
-  );
-}
+  </Provider>
+);
 
 export default App;

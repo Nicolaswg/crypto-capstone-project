@@ -1,43 +1,50 @@
-# Getting Started with Create React App
+# Crypto Capstone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-In the project directory, you can run:
 
-### `npm start`
+> Completed React & Redux project, releated to a single page app (SPA), were you can find information of the most populars crypto coins in the market using [coingecko](https://www.coingecko.com/es) API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built with
 
+- HTML/CSS
+- JavaScript
+- React & Redux
+- Git/Gitflow
+- JEST
+- React Testing Library
+
+## Live Demo
+[Heroku live page](https://reacrt-storebook.herokuapp.com/)
+
+
+https://user-images.githubusercontent.com/73354132/155653830-d237ef5b-84cc-4e4b-b086-080232c15b9e.mp4
+
+
+## Set up project
+
+
+> For testing out this project, you should follow the next simple steps:
+
+1.`clone repo` copy this link  https://github.com/Nicolaswg/crypto-capstone-project.git in to your local machine.
+
+2.`npm start` run this command inside the news branch.Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
+3.`npm test` Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+4.`npm run build`Builds the app for production to the `build` folder.\ It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5.`npm run eject` **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -65,6 +72,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Optional.`npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Authors 
+
+👤 **Nicolas**
+
+Platform | Badge |
+ --- | --- |
+ **GitHub**  | [Nicolaswg](https://github.com/Nicolaswg)
+ **Twitter** | [Nicolas54146830](https://twitter.com/Nicolas54146830)
+ **LinkdIn** | [nicolas-gonzalez](https://www.linkedin.com/in/nicolas-gonzalez-8623461a0/)
+
+ ## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Nicolaswg/crypto-capstone-project/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Share all the support to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for sharing his design that structured the squeleton of this project
+- Also i would like to give a big shout out to my peers [Zeeshan Haider](https://github.com/zhadier) and [Kyrillos Hany](https://github.com/Bondok6) go check out their profiles and show all your support.
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
