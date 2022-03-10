@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App components render correctly 1`] = `
+<div>
+  <div
+    class="main-content flex"
+  >
+    <div
+      class="header flex"
+    >
+      <div
+        class="flex-a flex"
+      >
+        <h1>
+          Crypto Coins
+        </h1>
+      </div>
+      <div
+        class="flex-a flex"
+      >
+        <input
+          placeholder="type your crypto"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <ul
+      class="coins-container flex"
+    />
+  </div>
+</div>
+`;

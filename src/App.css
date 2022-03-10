@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --color-primary: #4369b2;
+  --color-primary-ligth: rgba(67, 105, 178, 0.6);
+  --color-primary-dark: rgba(59, 97, 167, 0.8);
+  --color-white: #fff;
+  --color-gray: #dfdfdf;
+  --color-ligth-gray: #e6e4e49b;
+  --placeholder-color: #818080;
+  --color-detail: #8ea5d1;
+  --color-up: rgb(34, 238, 34);
+  --color-down: rgba(236, 34, 34, 0.835);
+}
+
+/* !!Main classes */
+body {
+  background: #0f2027;  /* fallback for old browsers */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.flex {
+  display: flex;
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* !!Header styles */
+.header {
+  max-width: 100%;
+  padding: 20px 0;
+  background: var(--color-primary-ligth);  /* fallback for old browsers */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex-a {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.flex-a h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 10px;
+  color: var(--color-gray);
+}
+
+.flex-a input {
+  margin: 10px;
+  min-width: 80%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  padding: 10px 5px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  transition: border-color 600ms ease;
+}
+
+.flex-a input:focus {
+  border-color: var(--color-primary);
+}
+
+.flex-a input::placeholder {
+  color: var(--placeholder-color);
+  letter-spacing: 1.2px;
+}
+
+/* !!CoinList styles */
+.coins-container {
+  background: #0f2027;  /* fallback for old browsers */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 2.5px;
+}
+
+.coin-card {
+  background-color: var(--color-primary-ligth);
+  width: 160px;
+  height: 160px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+  list-style: none;
+  -webkit-box-shadow: 2.1px 1px 4px 1.5px var(--placeholder-color);
+  -moz-box-shadow: 2px 1px 4px 1.5px var(--placeholder-color);
+  box-shadow: 2px 1px 4px 1.5px var(--placeholder-color);
+  transition: transform 400ms ease;
+}
+
+.coin-card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.card img {
+  width: 45%;
+}
+
+.coin-info {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.coin-name {
+  text-align: center;
+  margin: 3px;
+}
+
+.coin-value {
+  text-align: center;
+  margin: 3px;
+}
+
+/* !!CoinDetails styles */
+.detail-container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #0f2027;  /* fallback for old browsers */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-detail {
+  background-color: var(--color-detail);
+  margin: 10px;
+  min-width: 200px;
+  max-width: 350px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.card-detail-header {
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-detail-header img {
+  width: 150px;
+  height: 150px;
+}
+
+.list-details {
+  border: 2px solid var(--color-gray);
+  padding: 5px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list-details li {
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.list-details li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.detail {
+  gap: 5px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.price-up {
+  color: var(--color-up);
+}
+
+.price-down {
+  color: var(--color-down);
+}
+
+.detail-btn {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  padding: 12px;
+  background-color: var(--color-white);
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  transition: background-color ease 400ms, color ease 400ms;
+}
+
+.detail-btn:hover {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}

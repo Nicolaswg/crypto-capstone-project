@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Async correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <ul
+      data-testid="list"
+    >
+      <li>
+        Bitcoin
+      </li>
+      <li>
+        Ethereum
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
