@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-> Completed React & Redux project, releated to a single page app (SPA), were you can find information of the most popular crypto coins in the market using [coingecko](https://www.coingecko.com/es) API. Including a search bar for filtering the crypto coin you want to match.
+> Completed React & Redux project, releated to a single page app (SPA), were users can find information of the most popular crypto coins in the market using [coingecko](https://www.coingecko.com/es) API. Including a search bar for filtering the crypto coin you want to match.
 
 ## Built with
 
